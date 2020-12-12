@@ -59,9 +59,46 @@
   </head>
   <body>
     <div id="container">
+      <!-- 
+        https://avatar.uimaterial.com/?setId=0496UVJDTqyd2eCIAa46&name=John&size=512
+        https://via.placeholder.com/512 
+        https://dummyimage.com/512
+        https://placeimg.com/512/512/people
+        https://generative-placeholders.glitch.me/image?width=512&height=512
+        https://placekitten.com/g/512/512
+        https://loremflickr.com/512/512
+        https://baconmockup.com/512/512/ 
+        https://placebeard.it/512x512
+        https://www.stevensegallery.com/512/512
+        https://fakeimg.pl/512x512/
+        https://picsum.photos/640/360
+        https://www.fillmurray.com/640/640
+        https://thispersondoesnotexist.com/
+        https://www.gravatar.com/avatar/45e67126a4c44c6ae030279e21437c79?s=512
+        https://avatars.dicebear.com/4.5/api/gridy/seed.svg You can also omit seed to create a completely random avatar.
+        https://avatars.dicebear.com/4.5/api/human/seed.svg
+        https://avatars.dicebear.com/4.5/api/identicon/seed.svg?w=51&h=51
+        https://avatars.dicebear.com/4.5/api/jdenticon/seed.svg
+        https://avatars.dicebear.com/4.5/api/avataaars/seed.svgw
+        https://avatars.dicebear.com/4.5/api/bottts/seed.svg
+        https://avatars.dicebear.com/4.5/api/initials/seed.svg
+      -->
       <img class="draggable-item image-box" data-image-url="https://robohash.org/ss" src="https://robohash.org/ss" />
+      <img class="draggable-item image-box" data-image-url="https://ui-avatars.com/api/?size=512" src="https://ui-avatars.com/api/?size=512" />
+      <img class="draggable-item image-box" data-image-url="https://avatar.uimaterial.com/?setId=0496UVJDTqyd2eCIAa46&name=John&size=512" src="https://avatar.uimaterial.com/?setId=0496UVJDTqyd2eCIAa46&name=John&size=512" />
+      <img class="draggable-item image-box" data-image-url="https://via.placeholder.com/512" src="https://via.placeholder.com/512" />
+      <img class="draggable-item image-box" data-image-url="https://dummyimage.com/512" src="https://dummyimage.com/512" />
+      <img class="draggable-item image-box" data-image-url="https://placeimg.com/512/512/people" src="https://placeimg.com/512/512/people" />
+      <img class="draggable-item image-box" data-image-url="https://generative-placeholders.glitch.me/image?width=512&height=512" src="https://generative-placeholders.glitch.me/image?width=512&height=512" />
+      <img class="draggable-item image-box" data-image-url="https://placekitten.com/g/512/512" src="https://placekitten.com/g/512/512" />
     </div>
+    <script src="https://wzrd.in/bundle/getavataaars@latest"></script>
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
-    <script src="js/content.js"></script>
+    <script src="js/content.js"></script> 
+    <script>
+      var avatarsW = require('getavataaars');
+      console.log(avatarsW);
+      console.log("getavataaars W", avatarsW.generateAvatar());
+    </script>
   </body>
 </html>

@@ -1,5 +1,17 @@
+var avatars = require('getavataaars');
 
 function createImage(canvasX, canvasY, url) {
+  
+  console.log("getavataaars");
+  var image = avatars.generateAvatar();   
+  console.log("getavataaars", image);
+  image = avatars.generateAvatar({
+    Hair: avatars.Hair.Eyepatch,
+    Accessories: avatars.Accessories.Kurt,
+    Eyebrow: avatars.Eyebrow.Angry
+  }); 
+  console.log("getavataaars 2", image);
+
   return miro.board.widgets.create({
     type: 'image',
     url: url,
@@ -73,5 +85,7 @@ function bootstrap() {
   }
   miro.board.ui.initDraggableItemsContainer(container, shapeOptions)
 }
+
+
 
 miro.onReady(bootstrap)
